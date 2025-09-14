@@ -1,20 +1,21 @@
-body{
+body {
     position: relative;
 }
 
-header{
+header {
     width: 100%;
-    height: 600px;
+    height: 700px;
     position: relative;
 }
-header img{
+
+header img {
     width: 100%;
-    height: 600px;
+    height: 700px;
     object-fit: cover;
     filter: brightness(0.5);
 }
 
-.contenedor-menu{
+.contenedor-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,40 +30,40 @@ header img{
     z-index: 9999;
 }
 
-.logo{
+.logo {
     margin: 0;
     margin-left: 30px;
 }
 
-.logo img{
+.logo img {
     width: 200px;
     object-fit: cover;
 }
 
-.hamburguesa{
+.hamburguesa {
     display: none;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     gap: 30px;
     list-style: none;
     margin: 0;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: 600;
 }
 
-.social{
+.social {
     margin-right: 30px;
 }
 
 
-.social ul{
+.social ul {
     display: flex;
     gap: 30px;
     list-style: none;
@@ -70,31 +71,31 @@ header img{
 
 }
 
-.social i{
+.social i {
     font-size: 25px;
     color: white;
 }
 
 
-.titulo{
+.titulo {
     position: absolute;
     top: 280px;
     color: white;
     margin-left: 100px;
 }
 
-.titulo h1{
+.titulo h1 {
     font-size: 60px;
 }
 
-.titulo p{
+.titulo p {
     font-size: 30px;
     text-transform: capitalize;
 }
 
 /* hover menu */
 
-.hover::after{
+.hover::after {
     content: '';
     width: 0;
     height: 2px;
@@ -103,30 +104,30 @@ header img{
     transition: all .6s ease;
 }
 
-.hover:hover::after{
+.hover:hover::after {
     width: 100%;
 }
 
-@media (max-width: 800px){
-    .menu{
+@media (max-width: 800px) {
+    .menu {
         display: none;
     }
 
-    .social{
+    .social {
         display: none;
     }
 
-    .logo{
+    .logo {
         display: flex;
         justify-content: center;
         width: 100%;
     }
 
-    .logo img{
+    .logo img {
         margin-left: 80px;
     }
 
-    .hamburguesa{
+    .hamburguesa {
         display: block;
         margin-right: 30px;
         color: white;
@@ -135,7 +136,7 @@ header img{
     }
 }
 
-.nav2{
+.nav2 {
     position: fixed;
     top: 0;
     background-color: brown;
@@ -151,18 +152,18 @@ header img{
 
 }
 
-.nav2.active{
+.nav2.active {
     left: 0;
 }
 
-.nav2 h2{
+.nav2 h2 {
     text-align: center;
     color: white;
     margin-bottom: 40px;
     margin-left: 30px;
 }
 
-.menu2 ul{ 
+.menu2 ul {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -171,20 +172,20 @@ header img{
 
 }
 
-.menu2 a{
+.menu2 a {
     text-decoration: none;
     color: white;
     font-size: 25px;
 }
 
-.social2 ul{
+.social2 ul {
     display: flex;
     justify-content: center;
     list-style: none;
     gap: 20px;
 }
 
-.social2 i{
+.social2 i {
     color: white;
     font-size: 25px;
 
@@ -192,7 +193,7 @@ header img{
 
 /* barra banner */
 
-.barra-banner{
+.barra-banner {
     height: 60px;
     width: 100%;
     background-color: #333;
@@ -201,7 +202,7 @@ header img{
     justify-content: space-around;
 }
 
-.barra-banner ul{
+.barra-banner ul {
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -212,29 +213,29 @@ header img{
 
 }
 
-.barra-banner i{
+.barra-banner i {
     margin-right: 10px;
 }
 
-@media (max-width: 1100px){
-    .barra-banner{
+@media (max-width: 1100px) {
+    .barra-banner {
         display: none;
     }
 }
 
 /* nuestra carta */
 
-.carousel-item img{
+.carousel-item img {
     height: 500px;
     object-fit: contain;
 }
 
-.carousel-control-prev-icon{
+.carousel-control-prev-icon {
     padding: 20px;
     border-radius: 50%;
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     padding: 20px;
     border-radius: 50%;
 }
@@ -242,19 +243,19 @@ header img{
 
 /* promociones */
 
-.promociones{
+.promociones {
     position: relative;
 }
 
-.promociones img{
+.promociones img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     filter: brightness(0.5);
-    
+
 }
 
-.texto-promo{
+.texto-promo {
     position: absolute;
     top: 0;
     display: flex;
@@ -265,8 +266,125 @@ header img{
     width: 100%;
 }
 
-.texto-promo p{
+.texto-promo p {
     color: white;
     font-size: 30px;
     font-weight: 700;
+}
+
+/* hace tu pedido */
+.contenedor-formulario{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.form-box{
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+input,
+textarea,
+.boton-what {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.boton-what {
+    background: #25d366;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-what:hover {
+    background: #20b955;
+}
+
+.form-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 12px;
+    transition: all .6s ease;
+    
+    
+}
+
+
+h3{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+}
+
+.form-img img:hover{
+    transform: scale(1.07) rotate(5deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    filter: brightness(0.7);
+}
+
+
+/* boton whatsapp */
+.boton-whatsapp{
+    width: 200px;
+    background-color: #25d366;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    cursor: pointer;
+    border: 2px solid white;
+    z-index: 9999;
+}
+
+.boton-whatsapp i{
+    font-size: 30px;
+    margin-right: 10px;
+    color: white;
+    
+}
+
+.boton-whatsapp span{
+    color: white;
+    font-weight: 500;
+}
+
+/* footer */
+
+.contain{
+    width: 100%;
+    height: 200px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.contain img{
+    width: 200px;
+    margin-bottom: 50px;
 }
