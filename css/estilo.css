@@ -1,0 +1,272 @@
+body{
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+header img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.contenedor-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 9999;
+}
+
+.logo{
+    margin: 0;
+    margin-left: 30px;
+}
+
+.logo img{
+    width: 200px;
+    object-fit: cover;
+}
+
+.hamburguesa{
+    display: none;
+}
+
+.menu ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.social{
+    margin-right: 30px;
+}
+
+
+.social ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+
+}
+
+.social i{
+    font-size: 25px;
+    color: white;
+}
+
+
+.titulo{
+    position: absolute;
+    top: 280px;
+    color: white;
+    margin-left: 100px;
+}
+
+.titulo h1{
+    font-size: 60px;
+}
+
+.titulo p{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+/* hover menu */
+
+.hover::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: all .6s ease;
+}
+
+.hover:hover::after{
+    width: 100%;
+}
+
+@media (max-width: 800px){
+    .menu{
+        display: none;
+    }
+
+    .social{
+        display: none;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo img{
+        margin-left: 80px;
+    }
+
+    .hamburguesa{
+        display: block;
+        margin-right: 30px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+.nav2{
+    position: fixed;
+    top: 0;
+    background-color: brown;
+    width: 250px;
+    height: 100vh;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: left .6s ease;
+    left: -400px;
+    z-index: 9999;
+
+}
+
+.nav2.active{
+    left: 0;
+}
+
+.nav2 h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+.menu2 ul{ 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+
+}
+
+.menu2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.social2 ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.social2 i{
+    color: white;
+    font-size: 25px;
+
+}
+
+/* barra banner */
+
+.barra-banner{
+    height: 60px;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.barra-banner ul{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 200px;
+    list-style: none;
+    margin: 0;
+
+}
+
+.barra-banner i{
+    margin-right: 10px;
+}
+
+@media (max-width: 1100px){
+    .barra-banner{
+        display: none;
+    }
+}
+
+/* nuestra carta */
+
+.carousel-item img{
+    height: 500px;
+    object-fit: contain;
+}
+
+.carousel-control-prev-icon{
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.carousel-control-next-icon{
+    padding: 20px;
+    border-radius: 50%;
+}
+
+
+/* promociones */
+
+.promociones{
+    position: relative;
+}
+
+.promociones img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(0.5);
+    
+}
+
+.texto-promo{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.texto-promo p{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
