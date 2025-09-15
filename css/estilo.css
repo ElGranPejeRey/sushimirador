@@ -182,8 +182,9 @@ header img {
 .social2{
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: end;
 }
+
 
 .social2 ul {
     display: flex;
@@ -525,4 +526,8 @@ h3{
     .oscuro {
       background-color: black;
       color: white;
+    }
+
+    .boton-nav2{
+        right: 10px;
     }
