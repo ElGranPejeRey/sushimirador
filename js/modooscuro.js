@@ -4,6 +4,10 @@ const modo = () => {
 
     const boton = document.getElementById('botonOscuro');
 
+    const menu2 = document.getElementById('menu2')
+
+
+
     
 
     cuerpo.style.transition = '0.6s'
@@ -24,7 +28,12 @@ const modo = () => {
         boton.textContent = '☀️'
     }
 
-}
+    //cerrar menu responsive
+    if (menu2.classList.contains('active')) {
+        menu2.classList.remove('active');
+    }
+
+};
 
 const imgPedidos = document.getElementById('imgPedidos');
 const cuerpo = document.getElementById('cuerpo');
@@ -42,3 +51,6 @@ imgPedidos.addEventListener('mouseout', () => {
     imgPedidos.style.transform = 'scale(1) rotate(0deg)';
     imgPedidos.style.boxShadow = 'none';
 });
+
+
+
