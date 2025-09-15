@@ -60,3 +60,27 @@ window.sr = ScrollReveal();
         origin: 'bottom',
         distance: '400px',
     });
+
+    sr.reveal('.titulo-coment', {
+        duration: 4000,
+        origin: 'left',
+        distance: '400px',
+    });
+
+    sr.reveal('.parrafo-coment', {
+        duration: 4000,
+        origin: 'rigth',
+        distance: '400px',
+    });
+
+    sr.reveal('.img-comentarios', {
+        duration: 4000,
+        origin: 'bottom',
+        distance: '400px',
+    });
+
+    sr.reveal('.contenedor', {
+        duration: 4000,
+        origin: 'top',
+        distance: '400px',
+    });

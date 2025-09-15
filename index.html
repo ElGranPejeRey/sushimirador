@@ -41,6 +41,7 @@
                 <li><a class="hover" href="#inicio">Inicio</a></li>
                 <li><a class="hover" href="#carta">Carta</a></li>
                 <li><a class="hover" href="#pedido">Hace tu pedido</a></li>
+                <li><a class="hover" href="comentarios.html">Dejanos tu Comentario</a></li>
             </ul>
         </div>
 
@@ -60,6 +61,7 @@
                 <li><a class="hover" href="#inicio">Inicio</a></li>
                 <li><a class="hover" href="#carta">Carta</a></li>
                 <li><a class="hover" href="#pedido">Hace tu pedido</a></li>
+                <li><a class="hover" href="comentarios.html">Dejanos tu Comentario</a></li>
             </ul>
         </div>
 
@@ -128,8 +130,8 @@
     <div class="promociones my-5 overflow-hidden">
         <img src="img/un-primer-plano-de-la-gente-comiendo-sushi.jpg" alt="">
         <div class="texto-promo text-center">
-            <p>No te pierdas nuestra promoción del dia</p>
-            <a type="button" class="btn btn-danger" href="">ver promocion</a>
+            <p>ven a nuestra nueva sección y dejanos tu comentario!!!</p>
+            <a type="button" class="btn btn-danger" href="comentarios.html">Dejar Comentario</a>
         </div>
     </div>
 
@@ -140,11 +142,11 @@
         <div class="row overflow-hidden">
             <div class="col-12 col-lg-6 form-box py-5">
                 <form id="pedidoForm">
-                    <h2 class="text-center">Hacer tu Pedido</h2>
-                    <input type="text" id="nombre" placeholder="Nombre" required>
-                    <input type="tel" id="telefono" placeholder="Teléfono" required>
-                    <input type="text" id="direccion" placeholder="Dirección" required>
-                    <textarea id="pedido" rows="4" placeholder="Escribe tu pedido..." required></textarea>
+                    <h2 class="text-center">Realiza tu Pedido</h2>
+                    <input class="form-control" type="text" id="nombre" placeholder="Nombre" required>
+                    <input class="form-control" type="tel" id="telefono" placeholder="Teléfono" required>
+                    <input class="form-control" type="text" id="direccion" placeholder="Dirección" required>
+                    <textarea class="form-control" id="pedido" rows="4" placeholder="Escribe tu pedido..." required></textarea>
                     <button class="boton-what" type="submit">Enviar por WhatsApp</button>
                 </form>
             </div>
@@ -156,6 +158,7 @@
             </div>
         </div>
     </div>
+    
 
     <!-- footer -->
 
@@ -175,7 +178,7 @@
     </a>
 
     <!-- Bootstrap JavaScript Libraries -->
-
+    <script src="/js/coment.js"></script>
     <script src="/js/pedidos.js"></script>
     <script src="/js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
