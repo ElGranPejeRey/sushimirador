@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body id="cuerpo">
     <header class="header" id="inicio">
         <img src="/img/sushi-set-hot-rolls-aguacate-california-y-rollos-de-salmon.jpg" alt="">
         <div class="titulo">
@@ -46,10 +46,7 @@
         </div>
 
         <div class="social">
-            <ul>
-                <li><a href=""><i class="bi bi-facebook"></i></a></li>
-                <li><a href=""><i class="bi bi-instagram"></i></a></li>
-            </ul>
+            <button id="botonOscuro" onclick="modo()">🌙</button>
         </div>
     </div>
 
@@ -66,10 +63,7 @@
         </div>
 
         <div class="social2">
-            <ul>
-                <li><a href=""><i class="bi bi-facebook"></i></a></li>
-                <li><a href=""><i class="bi bi-instagram"></i></a></li>
-            </ul>
+            <button>Modo Oscuro</button>
         </div>
     </div>
 
@@ -151,7 +145,7 @@
                 </form>
             </div>
             <div class="col-12 col-lg-6 form-img position-relative mt-5 mt-lg-0 ">
-                <img src="/img/mano.jpg" alt="">
+                <img id="imgPedidos" src="/img/mano.jpg" alt="">
 
                 <h3 class="position-absolute">haz tu pedido ya!!</h3>
 
@@ -178,6 +172,7 @@
     </a>
 
     <!-- Bootstrap JavaScript Libraries -->
+     <script src="/js/modooscuro.js"></script>
     <script src="/js/coment.js"></script>
     <script src="/js/pedidos.js"></script>
     <script src="/js/menu.js"></script>
