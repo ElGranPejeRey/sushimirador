@@ -179,6 +179,12 @@ header img {
     font-size: 25px;
 }
 
+.social2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .social2 ul {
     display: flex;
     justify-content: center;
