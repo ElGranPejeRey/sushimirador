@@ -48,3 +48,15 @@ window.sr = ScrollReveal();
         origin: 'rigth',
         distance: '400px',
     });
+
+     sr.reveal('.img-footer', {
+        duration: 4000,
+        origin: 'top',
+        distance: '400px',
+    });
+
+    sr.reveal('.text-white', {
+        duration: 4000,
+        origin: 'bottom',
+        distance: '400px',
+    });
