@@ -96,21 +96,45 @@
 
             <div class="col-12 col-md-6 ">
                 <div class="contenedor mt-4 mt-md-0 overflow-hidden">
-                    <h2>Deja tu comentario</h2>
-                    <textarea id="cajaComentario" placeholder="Escribe algo..."></textarea>
+                    <h2>Comentarios</h2>
 
-                    <!-- Panel de emojis -->
+                    <textarea id="cajaComentario" placeholder="Escribe tu comentario..."></textarea><br>
                     <div class="emoji-panel">
-                        <span>😀</span><span>😂</span><span>😍</span><span>😎</span><span>😢</span>
-                        <span>👍</span><span>👏</span><span>🔥</span><span>❤️</span><span>🎉</span>
+                        <!-- Emojis básicos -->
+                        <span>😀</span>
+                        <span>😂</span>
+                        <span>😍</span>
+                        <span>😎</span>
+                        <span>😢</span>
+                        <span>😡</span>
+                        <span>👍</span>
+                        <span>👎</span>
+                        <span>🙏</span>
+                        <span>🎉</span>
+                        <span>💖</span>
+                        <span>🔥</span>
+                        <span>💯</span>
+                        <span>🤯</span>
+                        <span>🥳</span>
+                        <span>🤔</span>
+                        <span>🙌</span>
+                        <span>😴</span>
+                        <span>🤝</span>
+                        <span>⚡</span>
+                        <span>🌟</span>
+                        <span>🍀</span>
+                        <span>🌈</span>
+                        <span>🍕</span>
+                        <span>🍔</span>
+                        <span>🍩</span>
+                        <span>🏀</span>
+                        <span>⚽</span>
+                        <span>🎸</span>
+                        <span>🎧</span>
                     </div>
+                    <button class="boton-coment" id="btnEnviar">Enviar</button>
 
-                    <div class="botones">
-                        <button class="boton-coment" id="btnEnviar">Enviar</button>
-                        <button id="btnBorrar" class="btn-borrar boton-coment">Borrar todo</button>
-                    </div>
-
-                    <div class="comentarios" id="comentarios"></div>
+                    <div id="comentarios"></div>
                 </div>
             </div>
         </div>
@@ -138,6 +162,7 @@
     </a>
 
     <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="/js/modooscuro.js"></script>
     <script src="/js/coment.js"></script>
     <script src="/js/pedidos.js"></script>
